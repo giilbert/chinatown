@@ -1,16 +1,84 @@
 ---
+import "../styles/global.css";
+import "@fontsource/noto-serif";
+import "@fontsource/dm-serif-text";
 
+import { Image } from "astro:assets";
+
+import headerImage from "../images/header.jpg";
+import rainbowPavillionDetailImage from "../images/rainbow-pavilion-detail.jpg";
+import BodyImage from "../components/body-image.astro";
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Chinatown</title>
+  </head>
+  <body>
+    <header
+      class="w-screen h-screen bg-neutral-950 flex items-center justify-center"
+    >
+      <div>
+        <div
+          class="absolute bottom-0 left-0 lg:w-1/2 px-12 py-10 text-white text-shadow-neutral-700 text-shadow-lg space-y-2"
+        >
+          <h1 class="text-5xl">
+            From Mott Street to 8th Avenue: Unraveling Immigrant Culture in NYC
+            Chinatowns
+          </h1>
+          <p class="text-xl">by Gilbert Zhang</p>
+        </div>
+
+        <Image
+          src={headerImage}
+          alt="Chinatown"
+          class="w-full h-auto"
+          loading="eager"
+          priority
+          aria-describedby="header-description"
+        />
+      </div>
+    </header>
+
+    <main
+      class="flex justify-center mt-4 flex-col items-center space-y-8 mb-80"
+    >
+      <section class="w-full max-w-3xl px-4 md:px-6 space-y-4">
+        <p class="text-neutral-500" id="header-description">
+          Mott Street represents the foundation of Chinese immigrant presence in
+          New York City, established in the late 19th century when the first
+          significant Chinese population settled in Lower Manhattan. Today, it
+          remains both a living cultural repository and a dynamic commercial
+          center. <span class="italic"
+            >Photo taken with a Canon EOS Rebel T7 DSLR Camera.</span
+          >
+        </p>
+
+        <p class="text-xl leading-relaxed">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
+          hendrerit ante vel vulputate posuere. Nullam in ornare metus, in
+          sollicitudin lectus. Interdum et malesuada fames ac ante ipsum primis
+          in faucibus. Donec mi enim, ornare varius tellus ac, fermentum
+          pharetra orci. Etiam malesuada a massa quis gravida. Nam id
+          condimentum erat. Aenean quis eros arcu. Vestibulum sit amet augue
+          auctor, faucibus urna quis, maximus justo. Curabitur placerat est est,
+          sit amet eleifend ex pulvinar ac. Lorem ipsum dolor sit amet,
+          consectetur adipiscing elit.
+        </p>
+      </section>
+
+      <BodyImage>
+        <Image
+          src={rainbowPavillionDetailImage}
+          alt="Rainbow Pavilion Detail"
+          class="w-full h-auto"
+          loading="lazy"
+        />
+      </BodyImage>
+    </main>
+  </body>
 </html>
