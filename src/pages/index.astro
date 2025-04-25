@@ -1,13 +1,18 @@
 ---
 import "../styles/global.css";
-import "@fontsource/noto-serif";
+import "@fontsource/ibm-plex-serif";
 import "@fontsource/dm-serif-text";
 
 import { Image } from "astro:assets";
 
+import BodyCaption from "../components/body-caption.astro";
+import BodyImage from "../components/body-image.astro";
+import BodyText from "../components/body-text.astro";
+
 import headerImage from "../images/header.jpg";
 import rainbowPavillionDetailImage from "../images/rainbow-pavilion-detail.jpg";
-import BodyImage from "../components/body-image.astro";
+import eastBroadwayMallImage from "../images/east-broadway-mall.jpg";
+import mollyTeaImage from "../images/molly-tea.jpg";
 ---
 
 <html lang="en">
@@ -45,9 +50,9 @@ import BodyImage from "../components/body-image.astro";
     </header>
 
     <main
-      class="flex justify-center mt-4 flex-col items-center space-y-8 mb-80"
+      class="flex justify-center mt-4 flex-col items-center space-y-10 mb-80"
     >
-      <section class="w-full max-w-3xl px-4 md:px-6 space-y-4">
+      <div class="px-4 md:px-6 w-full max-w-3xl">
         <p class="text-neutral-500" id="header-description">
           Mott Street represents the foundation of Chinese immigrant presence in
           New York City, established in the late 19th century when the first
@@ -57,19 +62,38 @@ import BodyImage from "../components/body-image.astro";
             >Photo taken with a Canon EOS Rebel T7 DSLR Camera.</span
           >
         </p>
+      </div>
 
-        <p class="text-xl leading-relaxed">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras
-          hendrerit ante vel vulputate posuere. Nullam in ornare metus, in
-          sollicitudin lectus. Interdum et malesuada fames ac ante ipsum primis
-          in faucibus. Donec mi enim, ornare varius tellus ac, fermentum
-          pharetra orci. Etiam malesuada a massa quis gravida. Nam id
-          condimentum erat. Aenean quis eros arcu. Vestibulum sit amet augue
-          auctor, faucibus urna quis, maximus justo. Curabitur placerat est est,
-          sit amet eleifend ex pulvinar ac. Lorem ipsum dolor sit amet,
-          consectetur adipiscing elit.
+      <BodyText>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean lorem
+          erat, sagittis quis dui a, euismod rhoncus odio. Sed non ligula non
+          magna rhoncus aliquam in ornare lacus. In eget massa in sem mattis
+          tempor. Class aptent taciti sociosqu ad litora torquent per conubia
+          nostra, per inceptos himenaeos. Integer fringilla fringilla diam, ut
+          congue massa venenatis nec. Duis fermentum sodales libero non dapibus.
+          Vestibulum venenatis eget arcu eu posuere. Sed dapibus sollicitudin
+          urna ut luctus. Interdum et malesuada fames ac ante ipsum primis in
+          faucibus. Phasellus at mi lobortis, semper felis quis, facilisis est.
+          Maecenas ultricies sollicitudin purus ut pharetra. Aenean consectetur
+          ligula quis ante porttitor, in accumsan odio commodo. In porta viverra
+          velit, quis euismod felis malesuada ut. Quisque convallis arcu
+          volutpat arcu volutpat, a ullamcorper metus blandit. Cras sodales
+          rutrum arcu eget aliquam. Ut rhoncus tristique tincidunt.
         </p>
-      </section>
+
+        <p>
+          Duis lobortis nisi mauris, sed hendrerit urna cursus vitae. Etiam
+          consequat metus ipsum, id iaculis enim hendrerit non. Mauris sit amet
+          metus sit amet nisi bibendum sodales. Suspendisse ac velit dolor.
+          Aenean at purus at enim aliquam consequat nec quis libero. Sed
+          convallis augue et sodales molestie. Suspendisse euismod ex sit amet
+          imperdiet iaculis. Nam tincidunt quis justo vitae accumsan. Aenean
+          sollicitudin, eros eu commodo rhoncus, metus ante iaculis tellus, at
+          sodales nibh odio ut mauris. Suspendisse in fermentum ante. Nam
+          pretium tristique iaculis.
+        </p>
+      </BodyText>
 
       <BodyImage>
         <Image
@@ -78,7 +102,85 @@ import BodyImage from "../components/body-image.astro";
           class="w-full h-auto"
           loading="lazy"
         />
+        <BodyCaption
+          >Caption caption blah blah blah bleh bleh bleh blu blu blu. <span
+            class="italic"
+            >Photo taken with a Canon EOS Rebel T7 DSLR Camera</span
+          >.
+        </BodyCaption>
       </BodyImage>
+
+      <BodyText>
+        <p>
+          Cras et ante sit amet massa commodo finibus. Aliquam tristique vitae
+          nunc et tempor. Vivamus id diam nunc. In placerat sollicitudin
+          commodo. Nunc id quam ligula. Aliquam tristique eget nibh nec egestas.
+          Nam tristique quam eget malesuada tincidunt. Curabitur lobortis quis
+          elit tristique condimentum. Donec ullamcorper vestibulum ex, auctor
+          tincidunt nisi dictum quis. Aenean tincidunt enim vulputate sapien
+          gravida congue. Nam vitae hendrerit lorem, eu posuere risus. Nam
+          volutpat nunc leo. Praesent dictum sapien mauris, et finibus orci
+          iaculis non. Fusce nec sem ut massa semper maximus in vel dui. Donec
+          sollicitudin pulvinar elit vitae lacinia.
+        </p>
+      </BodyText>
+
+      <BodyImage>
+        <Image
+          src={eastBroadwayMallImage}
+          alt="East Broadway Mall"
+          class="w-full h-auto"
+          loading="lazy"
+        />
+        <BodyCaption
+          >Caption caption blah blah blah bleh bleh bleh blu blu blu. <span
+            class="italic">Photo taken with an iPhone 12</span
+          >.
+        </BodyCaption>
+      </BodyImage>
+
+      <BodyText>
+        <p>
+          Nam diam lectus, porta sed velit ut, porta condimentum enim. Ut eget
+          dignissim felis, a ornare diam. Ut semper libero a dolor condimentum
+          commodo. Nam sollicitudin felis tempus, ultrices ante at, feugiat
+          massa. Quisque quis lobortis risus. Pellentesque a augue pretium,
+          viverra urna non, finibus urna. Vestibulum ante ipsum primis in
+          faucibus orci luctus et ultrices posuere cubilia curae; In sit amet
+          lobortis nisl. Nunc mattis condimentum pharetra. Donec ac lectus quam.
+          Nam vestibulum turpis quis ante commodo interdum.
+        </p>
+      </BodyText>
+
+      <BodyImage>
+        <Image
+          src={mollyTeaImage}
+          alt="Molly Tea"
+          class="w-full h-auto"
+          loading="lazy"
+        />
+        <BodyCaption
+          >Caption caption blah blah blah bleh bleh bleh blu blu blu. <span
+            class="italic"
+            >Photo taken with a Canon EOS Rebel T7 DSLR Camera</span
+          >.
+        </BodyCaption>
+      </BodyImage>
+
+      <BodyText>
+        <p>
+          Nulla scelerisque nisl lectus, quis sagittis orci volutpat sed.
+          Aliquam posuere, nisi ut cursus iaculis, justo lectus tristique arcu,
+          pharetra maximus enim justo ut purus. Nam aliquam lectus sollicitudin
+          lobortis euismod. Aliquam et dolor ut velit semper rutrum sed at
+          dolor. Nam vitae nisl risus. Curabitur porta nisl sit amet nisi
+          hendrerit eleifend. Nam lectus felis, maximus nec placerat vitae,
+          tempor a nunc. Aenean ac finibus augue, vitae bibendum lectus.
+          Suspendisse arcu eros, blandit facilisis enim et, tempus accumsan
+          ligula. Phasellus venenatis sem facilisis posuere dictum. Quisque
+          fermentum eu libero euismod lacinia.
+        </p>
+      </BodyText>
     </main>
   </body>
 </html>

@@ -5,7 +5,7 @@
       "name": "chinatown",
       "dependencies": {
         "@fontsource/dm-serif-text": "^5.2.5",
-        "@fontsource/noto-serif": "^5.2.6",
+        "@fontsource/ibm-plex-serif": "^5.2.5",
         "@tailwindcss/vite": "^4.1.4",
         "astro": "^5.7.5",
         "tailwindcss": "^4.1.4",
@@ -87,7 +87,7 @@
 
     "@fontsource/dm-serif-text": ["@fontsource/dm-serif-text@5.2.5", "", {}, "sha512-zSrv/hmYm3TkMcF0Kigl69sU+83N0Dmj0HtiG+uDD/6jOpUPaaUme5bOLGs7kbtYvqqlu6bwtVGlXN9osuEiyA=="],
 
-    "@fontsource/noto-serif": ["@fontsource/noto-serif@5.2.6", "", {}, "sha512-mEGeD/duOwgEJooUsXpdCz3WdBJBfm7LEP2XQz/OSBXxj/GVwisULiOH2B7oL2tLBT6EGKTzZfmJAo6ZzOG0+w=="],
+    "@fontsource/ibm-plex-serif": ["@fontsource/ibm-plex-serif@5.2.5", "", {}, "sha512-0YyDEmqIqlMnPF/k1974zAJWjM9FNCg0TIYa9z6+W4koPmYf5llcOv6pqZK19zE/MnNxAJW0K18i5TEJE841YQ=="],
 
     "@img/sharp-darwin-arm64": ["@img/sharp-darwin-arm64@0.33.5", "", { "optionalDependencies": { "@img/sharp-libvips-darwin-arm64": "1.0.4" }, "os": "darwin", "cpu": "arm64" }, "sha512-UT4p+iz/2H4twwAoLCqfA9UH5pI6DggwKEGuaPy7nCVQ8ZsiY5PIcrRvD1DzuY3qYL07NtIQcWnBSY/heikIFQ=="],
 

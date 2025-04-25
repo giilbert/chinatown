@@ -1,0 +1,10 @@
+---
+interface Props {
+  class?: string;
+  id?: string;
+}
+---
+
+<p class:list={["text-neutral-500 px-4 min-[1280px]:px-0", Astro.props.class]}>
+  <slot id={Astro.props.id} />
+</p>

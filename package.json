@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@fontsource/dm-serif-text": "^5.2.5",
-    "@fontsource/noto-serif": "^5.2.6",
+    "@fontsource/ibm-plex-serif": "^5.2.5",
     "@tailwindcss/vite": "^4.1.4",
     "astro": "^5.7.5",
     "tailwindcss": "^4.1.4"
