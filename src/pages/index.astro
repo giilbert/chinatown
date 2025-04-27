@@ -13,6 +13,9 @@ import headerImage from "../images/header.jpg";
 import rainbowPavillionDetailImage from "../images/rainbow-pavilion-detail.jpg";
 import eastBroadwayMallImage from "../images/east-broadway-mall.jpg";
 import mollyTeaImage from "../images/molly-tea.jpg";
+import pellStreetOne from "../images/pell-street-1.jpg";
+import wahFungFastFoodImage from "../images/wah-fung-fast-food.jpg";
+import corkyLeeMuralOneImage from "../images/corky-lee-mural-1.jpg";
 ---
 
 <html lang="en">
@@ -38,8 +41,8 @@ import mollyTeaImage from "../images/molly-tea.jpg";
     />
     <meta property="article:author" content="Gilbert Zhang" />
     <title>
-      From Mott Street to 8th Avenue: Unraveling Immigrant Culture in NYC
-      Chinatowns
+      From Chatham Square to Grand Street: Unraveling Past and Present Culture
+      in Manhattan Chinatown Through Streetscapes
     </title>
   </head>
   <body>
@@ -51,8 +54,8 @@ import mollyTeaImage from "../images/molly-tea.jpg";
           class="absolute bottom-0 left-0 lg:w-1/2 px-12 py-10 text-white text-shadow-neutral-700 text-shadow-lg space-y-2"
         >
           <h1 class="text-5xl">
-            From Mott Street to 8th Avenue: Unraveling Immigrant Culture in NYC
-            Chinatowns
+            From Chatham Square to Grand Street: Unraveling Past and Present
+            Culture in Manhattan Chinatown Through Streetscapes
           </h1>
           <p class="text-xl">by Gilbert Zhang</p>
         </div>
@@ -62,7 +65,6 @@ import mollyTeaImage from "../images/molly-tea.jpg";
           alt="Chinatown"
           class="w-full h-auto"
           loading="eager"
-          priority
           aria-describedby="header-description"
         />
       </div>
@@ -101,36 +103,8 @@ import mollyTeaImage from "../images/molly-tea.jpg";
           testament to the enduring spirit of immigrant communities that have
           transformed urban spaces into homes away from home.
         </p>
-      </BodyText>
 
-      <BodyImage>
-        <Image
-          src={rainbowPavillionDetailImage}
-          alt="Rainbow Pavilion Detail"
-          class="w-full h-auto"
-          loading="lazy"
-        />
-        <BodyCaption
-          >Caption caption blah blah blah bleh bleh bleh blu blu blu. <span
-            class="italic"
-            >Photo taken with a Canon EOS Rebel T7 DSLR Camera</span
-          >.
-        </BodyCaption>
-      </BodyImage>
-
-      <BodyText>
-        <p>
-          Cras et ante sit amet massa commodo finibus. Aliquam tristique vitae
-          nunc et tempor. Vivamus id diam nunc. In placerat sollicitudin
-          commodo. Nunc id quam ligula. Aliquam tristique eget nibh nec egestas.
-          Nam tristique quam eget malesuada tincidunt. Curabitur lobortis quis
-          elit tristique condimentum. Donec ullamcorper vestibulum ex, auctor
-          tincidunt nisi dictum quis. Aenean tincidunt enim vulputate sapien
-          gravida congue. Nam vitae hendrerit lorem, eu posuere risus. Nam
-          volutpat nunc leo. Praesent dictum sapien mauris, et finibus orci
-          iaculis non. Fusce nec sem ut massa semper maximus in vel dui. Donec
-          sollicitudin pulvinar elit vitae lacinia.
-        </p>
+        <p class="font-mono">{`// TODO`}</p>
       </BodyText>
 
       <BodyImage>
@@ -138,44 +112,115 @@ import mollyTeaImage from "../images/molly-tea.jpg";
           src={eastBroadwayMallImage}
           alt="East Broadway Mall"
           class="w-full h-auto"
-          loading="lazy"
+          loading="eager"
         />
-        <BodyCaption
-          >Caption caption blah blah blah bleh bleh bleh blu blu blu. <span
-            class="italic">Photo taken with an iPhone 12</span
+        <BodyCaption>
+          Taken from the intersection of Division St and Market St looking at
+          Forsyth St, this photo depicts street vendors selling a variety of
+          goods, including produce, seafood, and household items. On the right
+          is the past entrance to the East Broadway Mall, a shopping center that
+          was once a bustling hub for Chinese-American businesses. The mall
+          closed in 2019 due to economic challenges and changing consumer
+          habits.
+          <span class="italic">Photo taken with an iPhone 12</span>.
+        </BodyCaption>
+      </BodyImage>
+
+      <BodyImage>
+        <Image
+          src={pellStreetOne}
+          alt="Pell Street"
+          class="w-full h-auto"
+          loading="eager"
+        />
+        <BodyCaption>
+          Pell Street is a historic street in Chinatown, considered part of
+          "Little Hong Kong." It is lined with restaurants, beauty salons, and
+          game rooms. The street is a popular destination for tourists and
+          locals
+          <span class="italic"
+            >Photo taken with a Canon EOS Rebel T7 DSLR Camera</span
           >.
         </BodyCaption>
       </BodyImage>
 
-      <BodyText>
-        <p>
-          Nam diam lectus, porta sed velit ut, porta condimentum enim. Ut eget
-          dignissim felis, a ornare diam. Ut semper libero a dolor condimentum
-          commodo. Nam sollicitudin felis tempus, ultrices ante at, feugiat
-          massa. Quisque quis lobortis risus. Pellentesque a augue pretium,
-          viverra urna non, finibus urna. Vestibulum ante ipsum primis in
-          faucibus orci luctus et ultrices posuere cubilia curae; In sit amet
-          lobortis nisl. Nunc mattis condimentum pharetra. Donec ac lectus quam.
-          Nam vestibulum turpis quis ante commodo interdum.
-        </p>
-      </BodyText>
+      <BodyImage>
+        <Image
+          src={corkyLeeMuralOneImage}
+          alt="Corky Lee Mural"
+          class="w-full h-auto"
+          loading="eager"
+        />
+        <BodyCaption>
+          Corky Lee (September 5, 1947 &hyphen; January 27, 2021) was a
+          Chinese-American photojournalist and activist known for his work
+          documenting an authentic and unmoderated view of the Asian-American
+          experience. Famously describing his camera as a "weapon of injustice,"
+          Lee's work often documented the struggles and triumphs of
+          Asian-Americans not often seen in mainstream media. This mural,
+          located on the corner of Doyers St and Bowery St, is a tribute to his
+          legacy and impact on the Asian-American community.
+          <span class="italic"
+            >Photo taken with a Canon EOS Rebel T7 DSLR Camera</span
+          >.
+        </BodyCaption>
+      </BodyImage>
+
+      <BodyImage>
+        <Image
+          src={wahFungFastFoodImage}
+          alt="Wah Fung Fast Food"
+          class="w-full h-auto"
+          loading="eager"
+        />
+        <BodyCaption>
+          Wah Fung Fast Food is a popular hole-in-the-wall eatery located on
+          Chrystie St. It is known for its delicious and affordable roast pork
+          and duck rice plates. The restaurant has a loyal following among
+          locals and tourists alike, who often line up outside to get their fix.
+          <span class="italic"
+            >Photo taken with a Canon EOS Rebel T7 DSLR Camera</span
+          >.
+        </BodyCaption>
+      </BodyImage>
 
       <BodyImage>
         <Image
           src={mollyTeaImage}
           alt="Molly Tea"
           class="w-full h-auto"
-          loading="lazy"
+          loading="eager"
         />
         <BodyCaption
-          >Caption caption blah blah blah bleh bleh bleh blu blu blu. <span
-            class="italic"
+          >Molly Tea is an emerging tea shop focusing on the natural flavors and
+          health benefits of tea. The shop is especially popular among younger
+          generations, who can be seen lining up outside the store.
+          <span class="italic"
             >Photo taken with a Canon EOS Rebel T7 DSLR Camera</span
           >.
         </BodyCaption>
       </BodyImage>
 
-      <BodyText>
+      <BodyImage>
+        <Image
+          src={rainbowPavillionDetailImage}
+          alt="Rainbow Pavilion Detail"
+          class="w-full h-auto"
+          loading="eager"
+        />
+        <BodyCaption>
+          Located on Mott Street, <i>Rainbow Pavilion</i> is a store that sells a
+          variety of Chinese stationary and decorative items. The storefront is lined
+          with bold-red and gold paper lanterns, firecrackers, and other paraphernalia
+          that are commonly used during Lunar New Year. An auspicious color, red
+          symbolizes good fortune and joy, while gold represents wealth and prosperity.
+          <span class="italic"
+            >Photo taken with a Canon EOS Rebel T7 DSLR Camera</span
+          >.
+        </BodyCaption>
+      </BodyImage>
+
+      <!-- <BodyText>
         <p>
           Nulla scelerisque nisl lectus, quis sagittis orci volutpat sed.
           Aliquam posuere, nisi ut cursus iaculis, justo lectus tristique arcu,
@@ -188,7 +233,7 @@ import mollyTeaImage from "../images/molly-tea.jpg";
           ligula. Phasellus venenatis sem facilisis posuere dictum. Quisque
           fermentum eu libero euismod lacinia.
         </p>
-      </BodyText>
+      </BodyText> -->
     </main>
   </body>
 </html>
