@@ -27,7 +27,7 @@ import corkyLeeMuralOneImage from "../images/corky-lee-mural-1.jpg";
     <meta property="og:type" content="article" />
     <meta
       property="og:title"
-      content="From Mott Street to 8th Avenue: Unraveling Immigrant Culture in NYC Chinatowns"
+      content="From Chatham Square to Grand Street: Unraveling Past and Present Culture in Manhattan Chinatown Through Streetscapes"
     />
     <meta property="og:url" content="https://chinatown.gilbertz.me" />
     <meta
@@ -47,26 +47,26 @@ import corkyLeeMuralOneImage from "../images/corky-lee-mural-1.jpg";
   </head>
   <body>
     <header
-      class="w-screen h-screen bg-neutral-950 flex items-center justify-center"
+      class="w-screen min-h-screen bg-neutral-950 flex justify-center items-center"
     >
       <div>
+        <Image
+          src={headerImage}
+          alt="Chinatown"
+          class="w-full h-auto max-h-screen"
+          loading="eager"
+          aria-describedby="header-description"
+        />
+
         <div
-          class="absolute bottom-0 left-0 lg:w-1/2 px-12 py-10 text-white text-shadow-neutral-700 text-shadow-lg space-y-2"
+          class="lg:absolute bottom-0 left-0 xl:w-2/3 px-12 py-10 text-white text-shadow-neutral-700 text-shadow-lg space-y-2"
         >
-          <h1 class="text-5xl">
+          <h1 class="text-3xl md:text-4xl lg:text-5xl">
             From Chatham Square to Grand Street: Unraveling Past and Present
             Culture in Manhattan Chinatown Through Streetscapes
           </h1>
           <p class="text-xl">by Gilbert Zhang</p>
         </div>
-
-        <Image
-          src={headerImage}
-          alt="Chinatown"
-          class="w-full h-auto"
-          loading="eager"
-          aria-describedby="header-description"
-        />
       </div>
     </header>
 
