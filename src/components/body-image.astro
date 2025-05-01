@@ -1,7 +1,13 @@
 ---
+interface Props {
+  horizontal?: boolean;
+}
 
+const { horizontal } = Astro.props as Props;
 ---
 
-<div class="w-[min(1280px,100vw)] space-y-2">
+<div
+  class:list={["w-[min(1280px,100vw)] space-y-2", horizontal ? "w-screen" : ""]}
+>
   <slot />
 </div>

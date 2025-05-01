@@ -7,3 +7,7 @@
 h1 {
   font-family: "DM Serif Text", serif;
 }
+
+img:not([data-header]) {
+  @apply bg-neutral-200;
+}
