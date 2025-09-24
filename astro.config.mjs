@@ -13,7 +13,7 @@ export default defineConfig({
       allowedHosts: ["*"],
     },
     preview: {
-      allowedHosts: ["testtest.sbcs.io"],
+      allowedHosts: true,
     },
   },
 
