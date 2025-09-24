@@ -10,7 +10,7 @@ export default defineConfig({
   vite: {
     plugins: [tailwindcss()],
     server: {
-      allowedHosts: ["*"],
+      allowedHosts: true,
     },
     preview: {
       allowedHosts: true,
