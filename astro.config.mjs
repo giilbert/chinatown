@@ -12,6 +12,9 @@ export default defineConfig({
     server: {
       allowedHosts: ["*"],
     },
+    preview: {
+      allowedHosts: ["*"],
+    },
   },
 
   adapter: vercel({
