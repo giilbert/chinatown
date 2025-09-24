@@ -6,8 +6,9 @@ RUN bun install --frozen-lockfile
 
 COPY . .
 
+RUN bun add serve@latest
 RUN bun run build
 
 EXPOSE 4321
 
-CMD ["bun", "run", "preview"]
+CMD ["bun", "run", "serve", "-l", "4321", "dist"]
